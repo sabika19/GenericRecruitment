@@ -28,7 +28,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-  <title>KVS | Recruitment</title>
+  <title> Recruitment</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -99,7 +99,7 @@
  
     </div>
     <div align="center">
-    <a href="http://cbse.nic.in"><h2><b>KVS</b>Recruitment</h2></a>
+    <a href="http://cbse.nic.in"><h2><b>Recruitment</b></h2></a>
     
     <!-- Main content -->
        
@@ -164,7 +164,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; CBSE 2018</p>
+                    <p>Copyright &copy; </p>
                 </div>
             </div>
         </footer>

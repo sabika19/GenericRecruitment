@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>KVS | Recruitment</title>
+    <title>Recruitment</title>
             <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
          <link href="css/modified-bootstrap.css" rel="stylesheet" />
@@ -71,18 +71,18 @@
             </div>--%>
         <div class="container in_banner" style="background-color:#A52A2A;color:white">
             <div class="logo col-md-2 col-sm-2 col-xs-2">
-                <img src="images/kvs.png" style="height:100px;border-width:0px;">
+                
             </div>
             <div class="banner_text col-md-7 col-sm-7 col-xs-7">
                 <h3 class="auto-style1">
-                    <span id="ctl00_TopLinks1_lblHeader1">KENDRIYA VIDYALAYA SANGATHAN</span>
+                    <span id="ctl00_TopLinks1_lblHeader1"></span>
                 </h3>
                 <h4 class="auto-style1">
-                    <span id="ctl00_TopLinks1_lblHeader2"><b>DIRECT RECRUITMENT EXAMINATION 2018</b></span>
+                    <span id="ctl00_TopLinks1_lblHeader2"><b>RECRUITMENT 2018</b></span>
                 </h4>
             </div>
             <div class="logo col-md-2 col-sm-2 col-xs-2" style="display:block;">
-                <img src="images/kvs.png" style="height:100px;border-width:0px;">
+               
             </div>
         </div>
     </div>

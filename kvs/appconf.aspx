@@ -81,7 +81,7 @@
 
           <div class="box box-warning">
             <div class="box-header with-border">
-              <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment of Principal, Vice Principal & Teaching Posts in Kendriya Vidyalaya Sangathan</strong></h4>
+              <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment Drive 2018</strong></h4>
 
             </div>
             
@@ -137,20 +137,24 @@
             <td style="font-size:small;font-weight:bold" class="auto-style9">Are you differently abled with 40% or above disability?<br />
                    <b style="font-size:small">
                     <p class="MsoNormal" style="text-align: justify; font-size: x-small;">
+                        &nbsp;</p>
+                        <span class="auto-style12">
+                <p class="MsoNormal" style="text-align: justify; font-size: x-small;">
                         <span class="auto-style13">
-                        <span class="auto-style12"><b><span>* As per OM dated 15.01.2018 of DOPT the following categories to be given 1% reservation <o:p></o:p></span></b>
+                        <b><span>* As per OM dated 15.01.2018 of DOPT the following categories to be given 1% reservation <o:p></o:p></span></b>
                     </p>
                     <p class="MsoNoSpacing" style="font-weight: bold; font-size: x-small">
                         (d) autism, intellectual disabilities, specific learning disabilities and mental illness<o:p></o:p></p>
+                        </span>
                     <p class="MsoNoSpacing" style="margin-left: .25in; text-indent: -.25in; font-size: x-small;">
-                        </span><span>(e) multiple disabilities from amongst persons under clause (a) to (d)&nbsp;&nbsp;&nbsp; including deaf –blindness.</span><o:p></o:p></span></span></p>
+                        <span>(e) multiple disabilities from amongst persons under clause (a) to (d)&nbsp;&nbsp;&nbsp; including deaf –blindness.</span><o:p></o:p></span></span></p>
 
                 </td><td style="font-size:small" class="auto-style12"><asp:Label ID="lblpwd" runat="server"></asp:Label>
              <br />
              <asp:Label ID="lblpwdcat" runat="server"></asp:Label></td><td style="font-size:small;font-weight:bold">Do you need a scribe?</td><td style="font-size:small"><asp:Label ID="lblscribe" runat="server"></asp:Label></td>
         </tr>
           <tr>
-            <td style="font-size:small;font-weight:bold" class="auto-style9">Are you a KVS employee?</td><td style="font-size:small" class="auto-style12"><asp:Label ID="lblkvemp" runat="server" ></asp:Label></td><td style="font-size:small;font-weight:bold">Are you a Central Government employee ?<br />
+            <td style="font-size:small;font-weight:bold" class="auto-style9">Are you a current employee?</td><td style="font-size:small" class="auto-style12"><asp:Label ID="lblkvemp" runat="server" ></asp:Label></td><td style="font-size:small;font-weight:bold">Are you a Central Government employee ?<br />
                    <b style="font-size:small">
                    <b class="auto-style11"> <font style="color:red;">Age relaxation is not applicable for government service below 3 years</font></b></td><td style="font-size:small"><asp:Label ID="lblcgemp" runat="server"></asp:Label><div id="dvcglenservlbl" runat="server"><asp:Label ID="lblcgservlen" runat="server"></asp:Label></div></td>
         </tr>

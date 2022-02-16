@@ -1876,24 +1876,6 @@ namespace kvs {
         protected global::System.Web.UI.WebControls.CustomValidator CustomValidator9;
         
         /// <summary>
-        /// btncont1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btncont1;
-        
-        /// <summary>
-        /// lnkDummy control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkDummy;
-        
-        /// <summary>
         /// ToolkitScriptManager1 control.
         /// </summary>
         /// <remarks>
@@ -1901,15 +1883,6 @@ namespace kvs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.ToolkitScriptManager ToolkitScriptManager1;
-        
-        /// <summary>
-        /// ModalPopupExtender2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.ModalPopupExtender ModalPopupExtender2;
         
         /// <summary>
         /// Panel2 control.

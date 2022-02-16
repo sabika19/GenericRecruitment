@@ -34,7 +34,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-  <title>KVS | Recruitment</title>
+  <title>Recruitment</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -94,7 +94,7 @@
 
           <div class="box box-success">
             <div class="box-header with-border">
-              <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment Drive of Teaching Posts in Kendriya Vidyalaya Sangathan</strong></h4>
+              <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment Drive 2018</strong></h4>
 
             
             </div>

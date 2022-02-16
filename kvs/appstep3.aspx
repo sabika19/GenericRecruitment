@@ -73,7 +73,7 @@ $("#txtdatepicker").datepicker();
 
           <div class="box box-warning">
             <div class="box-header with-border">
-              <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment Drive of Teaching Posts in Kendriya Vidyalaya Sangathan</strong></h4>
+              <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment Drive 2018</strong></h4>
 
               <div class="box-tools pull-right">
             <a href="images/Terms and Conditions.pdf" target="_blank" style="font-size:medium;font-weight:bold;color:red">Terms & Conditions</a>

@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>KVS | Recruitment</title>
+    <title>Recruitment</title>
             <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
          <link href="../css/modified-bootstrap.css" rel="stylesheet" />

@@ -85,6 +85,9 @@ p.MsoNoSpacing
             margin-right: 0in;
             margin-top: 0in;
         }
+        .auto-style13 {
+            font-weight: bold;
+        }
         </style>
 
     <script type="text/javascript">
@@ -409,7 +412,7 @@ p.MsoNoSpacing
 
           <div class="box box-warning">
             <div class="box-header with-border">
-             <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment Drive of Teaching Posts in Kendriya Vidyalaya Sangathan</strong></h4>
+             <h4 class="box-title" style="text-align:center; width: 100%;"><strong>Direct Recruitment Drive </strong>2<span class="auto-style13">018</span></h4>
 
                 <%--<asp:CheckBox ID="prtmusic" runat="server" Text="Primary Teacher Music (PRT Music)" Font-Size="Small" />--%>
               
@@ -661,7 +664,7 @@ p.MsoNoSpacing
              <tr>
                
                 <td >
-                   <b style="font-size:small">Are you a KVS employee? <font style="color:red;">*</font>
+                   <b style="font-size:small">Are you a current employee? <font style="color:red;">*</font>
 
                 </td>
                  <td class="auto-style3" >
@@ -1225,19 +1228,6 @@ p.MsoNoSpacing
                     <li>I have never been debarred by any organisation for any illegal activity during my education/service.</li>  
                     <li> I understand that merely submission of online application form does not imply the fulfilling of eligibility criteria for the applied post.
 </li>  
-                    <li>I understand that in the event of any information found false/ incorrect/suppressed or any ineligibility being detected before or after the test/interview/ selection my candidature is liable to be cancelled and no correspondence will be entertained by KVS in this regard.
-</li>  
-                     <li>After the examination or at the time of interview, the request for change of particulars especially for change of category / sub-category will not be entertained by KVS.
-</li>  
-
-
-
-                    <br /><br />
-                 
-                   <div align="center">
-                           <asp:Button ID="btncont1" runat="server" CssClass="btn btn-lg btn-danger" Text="I Agree, And Continue" ValidationGroup="cadndet" OnClick="btncont1_Click"   />
-                <asp:LinkButton ID="lnkDummy" runat="server"></asp:LinkButton>
-             </div>
                     </div>
                 </div>
             <%-- <script type="text/javascript">
@@ -1251,9 +1241,6 @@ p.MsoNoSpacing
     </script>--%>  <cc2:ToolkitScriptManager ID="ToolkitScriptManager1"  AjaxFrameworkMode="Enabled" runat="server">
 </cc2:ToolkitScriptManager>
       <!-- ModalPopupExtender -->
-<cc2:ModalPopupExtender ID="ModalPopupExtender2" runat="server" PopupControlID="Panel2" TargetControlID="lnkDummy"
-     BackgroundCssClass="modalBackground">
-</cc2:ModalPopupExtender>
 <asp:Panel ID="Panel2" runat="server" CssClass="modalPopup" align="center" style = "display:none">
 <asp:UpdatePanel ID="UpdatePanel2" runat="server" >
         <ContentTemplate>
