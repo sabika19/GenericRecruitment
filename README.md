@@ -1,0 +1,2 @@
+# GenericRecruitment
+ Generic recruitment page
