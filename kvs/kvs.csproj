@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B670B8E-C62B-4853-8AD3-C0D3A375660B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kvs</RootNamespace>
+    <AssemblyName>kvs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>F:\CCE2017_FINAL\cce\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\Users\HarryPotter\Downloads\kvs_static\zip-v1.9\Release\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zlib">
+      <HintPath>C:\Users\HarryPotter\Downloads\kvs_static\zlib-v1.9\Release\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net40\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net40\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net40\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net40\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>C:\Users\Sabika\Documents\kvs_lde\bin\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net40\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\..\..\kvs_091017\kvs\kvs\bin\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource">
+      <HintPath>..\..\..\kvs_091017\kvs\kvs\bin\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSCaptcha">
+      <HintPath>..\..\..\..\theory2017c\bin\MSCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admn\admnconf.aspx" />
+    <Content Include="admn\admnReport.aspx" />
+    <Content Include="admn\admnfilter.aspx" />
+    <Content Include="appdownload.aspx" />
+    <Content Include="appedit.aspx" />
+    <Content Include="appstep1.aspx" />
+    <Content Include="editlogin.aspx" />
+    <Content Include="editpaysuccess.aspx" />
+    <Content Include="editstep3.aspx" />
+    <Content Include="appphoto.aspx" />
+    <Content Include="appstep123tstcpy.aspx" />
+    <Content Include="appstep2.aspx" />
+    <Content Include="bd\bdconf.aspx" />
+    <Content Include="appconf.aspx" />
+    <Content Include="appforgot.aspx" />
+    <Content Include="admn\admnlogin.aspx" />
+    <Content Include="admn\admnhome.aspx" />
+    <Content Include="edit\images\kvs.png" />
+    <Content Include="js\aes.js" />
+    <Content Include="js\md5.js" />
+    <Content Include="kvs_static\Apply.html" />
+    <Content Include="kvs_static\apply_hindi.html" />
+    <Content Include="kvs_static\contact.html" />
+    <Content Include="kvs_static\contact_hindi.html" />
+    <Content Include="kvs_static\Criteria.html" />
+    <Content Include="kvs_static\Criteria_hindi.html" />
+    <Content Include="kvs_static\css\bootstrap.css" />
+    <Content Include="kvs_static\css\Style.css" />
+    <Content Include="kvs_static\home.html" />
+    <Content Include="kvs_static\home_hindi.html" />
+    <Content Include="kvs_static\img\a.png" />
+    <Content Include="kvs_static\img\b.png" />
+    <Content Include="kvs_static\img\cbse-logo.png" />
+    <Content Include="kvs_static\img\cur_event_brn4.png" />
+    <Content Include="kvs_static\img\kvs.png" />
+    <Content Include="kvs_static\img\logo1.png" />
+    <Content Include="kvs_static\img\newicon.gif" />
+    <Content Include="kvs_static\img\news_event_brown.png" />
+    <Content Include="kvs_static\Instruction.html" />
+    <Content Include="kvs_static\Instruction_hindi.html" />
+    <Content Include="kvs_static\js\bootstrap.min.js" />
+    <Content Include="kvs_static\js\jquery-1.11.1.min.js" />
+    <Content Include="kvs_static\recruitment.html" />
+    <Content Include="kvs_static\recruitment_hindi.html" />
+    <Content Include="kvs_static\Selection.html" />
+    <Content Include="kvs_static\Selection_hindi.html" />
+    <Content Include="kvs_static\vacancies.html" />
+    <Content Include="kvs_static\vacancies_hindi.html" />
+    <Content Include="paysuccess.aspx" />
+    <Content Include="bd\bdlogin.aspx" />
+    <Content Include="applogin.aspx" />
+    <Content Include="appstep3.aspx" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\npm.js" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\half-slider.css" />
+    <Content Include="css\heroic-features.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\modified-bootstrap.css" />
+    <Content Include="dist\css\AdminLTE.min.css" />
+    <Content Include="dist\css\skins\_all-skins.min.css" />
+    <Content Include="dist\js\app.js" />
+    <Content Include="dist\js\app.min.js" />
+    <Content Include="dist\js\demo.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="bd\bdhome.aspx" />
+    <Content Include="howtoapply.aspx" />
+    <Content Include="images\cbse-logo.png" />
+    <Content Include="images\digitalindia.png" />
+    <Content Include="images\kvs.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\slide1.jpg" />
+    <Content Include="images\slide2.jpg" />
+    <Content Include="images\slide3.jpg" />
+    <Content Include="images\slide4.jpg" />
+    <Content Include="images\slide5.jpg" />
+    <Content Include="images\slide6.jpg" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="Oops.html" />
+    <Content Include="payment.aspx" />
+    <Content Include="info.aspx" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="plugins\datepicker\bootstrap-datepicker.js" />
+    <Content Include="plugins\datepicker\datepicker3.css" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ar.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.az.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.bg.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ca.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.cs.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.cy.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.da.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.de.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.el.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.es.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.et.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.fa.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.fi.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.gl.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.he.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.hr.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.hu.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.id.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.is.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.it.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ja.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ka.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.kk.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.kr.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.lt.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.lv.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.mk.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ms.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.nb.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.nl-BE.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.nl.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.no.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.pl.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.pt.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ro.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.rs-latin.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.rs.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ru.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.sk.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.sl.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.sq.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.sv.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.sw.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.th.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.tr.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.ua.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.vi.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="plugins\datepicker\locales\bootstrap-datepicker.zh-TW.js" />
+    <Content Include="plugins\daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="plugins\daterangepicker\daterangepicker.js" />
+    <Content Include="plugins\daterangepicker\moment.js" />
+    <Content Include="plugins\daterangepicker\moment.min.js" />
+    <Content Include="plugins\fastclick\fastclick.js" />
+    <Content Include="plugins\fastclick\fastclick.min.js" />
+    <Content Include="plugins\iCheck\icheck.js" />
+    <Content Include="plugins\iCheck\icheck.min.js" />
+    <Content Include="plugins\iCheck\square\blue.css" />
+    <Content Include="plugins\jQuery\jQuery-2.2.0.min.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-usa-en.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="plugins\slimScroll\jquery.slimscroll.js" />
+    <Content Include="plugins\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="randimg.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admn\admnconf.aspx.cs">
+      <DependentUpon>admnconf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admn\admnconf.aspx.designer.cs">
+      <DependentUpon>admnconf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admn\admn.Master.cs">
+      <DependentUpon>admn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admn\admn.Master.designer.cs">
+      <DependentUpon>admn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admn\admnReport.aspx.cs">
+      <DependentUpon>admnReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admn\admnReport.aspx.designer.cs">
+      <DependentUpon>admnReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admn\admnfilter.aspx.cs">
+      <DependentUpon>admnfilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admn\admnfilter.aspx.designer.cs">
+      <DependentUpon>admnfilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AESEncrytDecry.cs" />
+    <Compile Include="appdownload.aspx.cs">
+      <DependentUpon>appdownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appdownload.aspx.designer.cs">
+      <DependentUpon>appdownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appedit.aspx.cs">
+      <DependentUpon>appedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appedit.aspx.designer.cs">
+      <DependentUpon>appedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appstep1.aspx.cs">
+      <DependentUpon>appstep1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appstep1.aspx.designer.cs">
+      <DependentUpon>appstep1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editlogin.aspx.cs">
+      <DependentUpon>editlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editlogin.aspx.designer.cs">
+      <DependentUpon>editlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editpaysuccess.aspx.cs">
+      <DependentUpon>editpaysuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editpaysuccess.aspx.designer.cs">
+      <DependentUpon>editpaysuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editstep3.aspx.cs">
+      <DependentUpon>editstep3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editstep3.aspx.designer.cs">
+      <DependentUpon>editstep3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appphoto.aspx.cs">
+      <DependentUpon>appphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appphoto.aspx.designer.cs">
+      <DependentUpon>appphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appstep123tstcpy.aspx.cs">
+      <DependentUpon>appstep123tstcpy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appstep123tstcpy.aspx.designer.cs">
+      <DependentUpon>appstep123tstcpy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appstep2.aspx.cs">
+      <DependentUpon>appstep2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appstep2.aspx.designer.cs">
+      <DependentUpon>appstep2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bd\bdconf.aspx.cs">
+      <DependentUpon>bdconf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bd\bdconf.aspx.designer.cs">
+      <DependentUpon>bdconf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appconf.aspx.cs">
+      <DependentUpon>appconf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appconf.aspx.designer.cs">
+      <DependentUpon>appconf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appforgot.aspx.cs">
+      <DependentUpon>appforgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appforgot.aspx.designer.cs">
+      <DependentUpon>appforgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bd\bd.Master.cs">
+      <DependentUpon>bd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bd\bd.Master.designer.cs">
+      <DependentUpon>bd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admn\admnlogin.aspx.cs">
+      <DependentUpon>admnlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admn\admnlogin.aspx.designer.cs">
+      <DependentUpon>admnlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admn\admnhome.aspx.cs">
+      <DependentUpon>admnhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admn\admnhome.aspx.designer.cs">
+      <DependentUpon>admnhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="paysuccess.aspx.cs">
+      <DependentUpon>paysuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paysuccess.aspx.designer.cs">
+      <DependentUpon>paysuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bd\bdlogin.aspx.cs">
+      <DependentUpon>bdlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bd\bdlogin.aspx.designer.cs">
+      <DependentUpon>bdlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="applogin.aspx.cs">
+      <DependentUpon>applogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="applogin.aspx.designer.cs">
+      <DependentUpon>applogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="appstep3.aspx.cs">
+      <DependentUpon>appstep3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appstep3.aspx.designer.cs">
+      <DependentUpon>appstep3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="bd\bdhome.aspx.cs">
+      <DependentUpon>bdhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bd\bdhome.aspx.designer.cs">
+      <DependentUpon>bdhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="howtoapply.aspx.cs">
+      <DependentUpon>howtoapply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="howtoapply.aspx.designer.cs">
+      <DependentUpon>howtoapply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="info.aspx.cs">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="info.aspx.designer.cs">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kvs.Master.cs">
+      <DependentUpon>kvs.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kvs.Master.designer.cs">
+      <DependentUpon>kvs.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="randimg.aspx.cs">
+      <DependentUpon>randimg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="randimg.aspx.designer.cs">
+      <DependentUpon>randimg.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kvs.Master" />
+    <Content Include="bootstrap\css\bootstrap.css.map" />
+    <Content Include="bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bd\bd.Master" />
+    <Content Include="admn\admn.Master" />
+    <Content Include="images\Terms and Conditions.pdf" />
+    <Content Include="kvs_static\KVS\category_wise_breakup.pdf" />
+    <Content Include="kvs_static\KVS\ELIGIBILITY_CRITERIA.pdf" />
+    <Content Include="kvs_static\KVS\GENERAL_INSTRUCTIONS_TO _THE_CANDIDATES.pdf" />
+    <Content Include="kvs_static\KVS\HOW_TO_APPLY.pdf" />
+    <Content Include="kvs_static\KVS\KVS_Detailed_Webmaterial.pdf" />
+    <Content Include="kvs_static\KVS\MODE_OF _SELECTION.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\Hindi Ad.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\old pdf\अभ्यर्थी के लिए सामान्य अनुदेश.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\old pdf\आवेदन का तरीका.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\old pdf\चयन विधि.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\old pdf\रिक्त स्थानों का पदवार और श्रेणीवार ब्योरा निम्न प्रकार है.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\old pdf\शैक्षिक अर्हताएँ.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\अभ्यर्थी के लिए सामान्य अनुदेश.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\आवेदन का तरीका.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\चयन विधि.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\रिक्त स्थानों का पदवार और श्रेणीवार ब्योरा निम्न प्रकार है.pdf" />
+    <Content Include="kvs_static\KVS_HINDI\शैक्षिक अर्हताएँ.pdf" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Download\" />
+    <Folder Include="signs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24393</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24393/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

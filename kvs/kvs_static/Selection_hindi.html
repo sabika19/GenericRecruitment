@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>केवीएस विशेष भर्ती अभियान</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="css/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="digitized();">
+<div class="topdiv">
+<div class="topbuton container">
+<div style="margin-top: 5px;">
+<img id="plustext" alt="Increase text size" src="img/a.png" style="height: 21px; cursor:pointer;" onclick="resizeText(1)" />
+<img id="minustext" alt="Decrease text size" src="img/b.png" style="height: 21px; cursor:pointer;" onclick="resizeText(-1)" />
+</div>
+<span class="topright">
+<a class="lang" href="home_hindi.html">हिंदी </a> &nbsp;   |    
+<a href="home.html" style="color:white"> English </a>    
+</span>
+</div>
+</div>
+<div class="top_banner">
+<div class="container in_banner">
+        <div class=" logo col-md-2 col-sm-2 col-xs-3">
+            <img id="ctl00_TopLinks1_imgLogoLeft" src="img/kvs.png" style="height:110px;border-width:0px;">
+        </div>
+        <div class="banner_text col-md-7 col-sm-7 col-xs-6">
+            <h1>
+                <span id="ctl00_TopLinks1_lblHeader">केंद्रीय माध्यमिक शिक्षा बोर्ड</span>
+            </h1>
+			  <h2>
+                <span id="ctl00_TopLinks1_lblSubHeader">उत्तर पूर्वी क्षेत्र के लिए टीचिंग पदों की भर्ती हेतु  विशेष भर्ती अभियान -2018 </span>
+            </h2>
+            <h2>
+                <span id="ctl00_TopLinks1_lblSubHeader">केन्द्रीय विद्यालय संगठन</span>
+            </h2>
+        </div>
+        <div class=" logo col-md-2 col-sm-2 col-xs-3">
+            <img id="ctl00_TopLinks1_imgLogoRight" src="img/logo1.png" style="height:110px;border-width:0px;">
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
+     <ul id="ctl00_TopLinks_BLinks" class="nav navbar-nav navbar-left">
+			<li><a target="_self" href="home_hindi.html">मूल पृष्ठ</a></li>
+			<li><a target="_self" href="recruitment_hindi.html">केवीएस भर्ती</a></li>
+			<li><a target="_self" href="vacancies_hindi.html">रिक्तियों की संख्या </a></li>
+			<li><a target="_self" href="Criteria_hindi.html">पात्रता मापदंड</a></li>
+			<li><a target="_self" href="Instruction_hindi.html">सामान्य निर्देश</a></li>
+			<li><a target="_self" href="apply_hindi.html">आवेदन कैसे करे</a></li>
+			<li><a target="_self" href="Selection_hindi.html">चयन का तरीका</a></li>
+			<li> <a target="_self" href="contact_hindi.html">हमसे संपर्क करें</a></li>
+			
+			
+			</ul>
+
+        </div>
+</div>
+</nav>
+<div class="container white_bg">
+ <div style="height: 15px;" class="cleaner">
+        </div>
+<div class="col-md-3 col-sm-12 col-xs-12">
+  <div class="important_link">
+    <div class="important_linktab">
+        <h2>
+            <span id="ctl00_ImportantLinks_lbltitle">महत्वपूर्ण लिंक</span>
+        </h2>
+    </div>
+    <ul id="ctl00_ImportantLinks_BLinks">
+        <li> <a target="_blank" href="../appstep1.aspx">अभी अप्लाई करें</a></li>
+        <li> <a target="_blank" href="../applogin.aspx">लॉग इन करें</a></li>
+        <li> <a target="_self" href="../applogin.aspx">पुष्टि पृष्ठ उत्पन्न करें</a></li>
+        <li> <a target="_blank" href="../appforgot.aspx">पंजीकरण संख्या भूल गए </a></li>
+        <li> <a target="_blank" href="../applogin.aspx">आवेदन का अंतिम प्रिंट</a></li>
+	<li><a target="_blank" href="KVS_HINDI/रिक्त स्थानों का पदवार और श्रेणीवार ब्योरा निम्न प्रकार है.pdf">रिक्तियों की संख्या </a></li>
+	<li><a target="_blank" href="KVS_HINDI/शैक्षिक अर्हताएँ.pdf">पात्रता मानदंड</a></li>
+	<li><a target="_blank" href="KVS_HINDI/अभ्यर्थी के लिए सामान्य अनुदेश.pdf">सामान्य निर्देश</a></li>
+	<li><a target="_blank" href="KVS_HINDI/आवेदन का तरीका.pdf">आवेदन कैसे करे</a></li>
+	<li><a target="_blank" href="KVS_HINDI/चयन विधि.pdf" >चयन का तरीका</a></li>
+	</ul>
+</div>          
+<br>										
+<!----<code style="font-size: 21.3px;color:black;">आप विज़िटर नंबर हैं</code>
+</br>	
+<img src="http://hitwebcounter.com/counter/counter.php?page=6754953&style=0027&nbdigits=7&type=page&initCount=0"  style="width:180px;" >--->
+                                     <br/>		
+</div>
+<div class="col-md-6 col-sm-8 col-xs-12">
+  <h2 class="page_heading">चयन विधि</h2>
+    <div class="history">
+
+    </div><br>
+    <div>
+        <br>
+<span>
+<p align="justify"><span><font color="#000000" >
+(क) उम्मीदवारों का चयन लिखित परीक्षा और साक्षात्कार दोनों में उनके निष्पादन के आधार पर किया जाएगा। केन्द्रीय विद्यालय संगठन को लिखित परीक्षा और साक्षात्कार  दोनों में अलग-अलग विच्छेद अंक निर्धारित करने का अधिकार है । उपर्युक्त पदों की चयन विधि और साक्षात्कार के लिए आवेदकों की पात्रता  शर्तों के लिए केन्द्रीय विद्यालय संगठन द्वारा लिया गया निर्णय अंतिम एवं सर्वमान्य होगा। इस संबंध में किसी भी पत्राचार पर विचार नहीं किया जाएगा ।</font></span></p>
+
+<p align="justify"><span><font color="#000000" style="font-weight:bold;">
+तथापि केन्द्रीय विद्यालय संगठन के पास उपर्युक्त सभी पदों के लिए चयन  विधि के संबंध में एकाधिकार होगा तथा चयन प्रक्रिया विधि में परिवर्तन ऑनलाइन आवेदन माँगने की तारीख से पहले अधिसूचना  द्वारा  किया जा सकता है। पीजीटी, टीजीटी और प्राथमिक अध्यापक की अंतिम योग्यता क्रम सूची अभ्यर्थियों की  लिखित परीक्षा और साक्षात्कार के निष्पादन पर आधारित होगी। पीजीटी, टीजीटी  और प्राथमिक अध्यापक के पद के लिए लिखित परीक्षा और साक्षात्कार के लिए अंकों का महत्व 85:15 होगा। 
+</font></span></p>
+
+<p align="justify"><span><font color="#000000">
+(ख) उपर्युक्त पदों की भर्ती के लिए परीक्षा  निम्नलिखित 18 शहरों में संभावित है । तथापि, अभ्यर्थियों की संख्या और अन्य आकस्मिकताओं के कारण केन्द्रीय विद्यालय संगठन को लिखित परीक्षा सभी शहरों में अथवा किसी एक या  अधिक शहरों में आयोजित करने का अधिकार होगा। किसी शहर के लिए केंन्द्रों की संख्या अभ्यर्थियों के द्वारा केंन्द्र के दिए गए विकल्पों के आधार पर होगी।
+</font></span></p>
+
+<table style="border: currentColor; border-image: none; width: 251.2pt; margin-left: 9.9pt; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt;" border="1" cellspacing="0" cellpadding="0"> 
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top"  style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; 
+height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" align="center" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"=""><b>परीक्षा केन्द्र</b><span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p><b>परीक्षा कोड</b></p>
+</td> </tr>
+
+<tbody>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; 
+height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">भोपाल<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>01</p>
+</td> </tr>
+ <tr style="height: 19.55pt; mso-yfti-irow: 1;"> <td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">भुवनेश्वर</span></p>
+</td> 
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>02</p>
+</td>
+</tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">चंडीगढ़<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>03</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">देहरादून<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>04</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+दिल्ली राष्ट्रीय राजधानी क्षेत्र<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>05</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+गोरखपुर<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>06</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+गुवाहाटी<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>07</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+हैदराबाद<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>08</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+इम्फाल<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>09</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+जयपुर<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>10</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+कोलकाता<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>11</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+लखनउ<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>12</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+पटना<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>13</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+पूणे<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>14</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+रॉची<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>15</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+सिल्चर<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>16</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+शिलांग<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>17</p>
+</td> </tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+वाराणसी<span>
+</span></p>
+</td>
+ <td valign="top" align="center" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>18</p>
+</td> </tr>
+</tbody></table>
+</br>
+<p align="justify"><span><font color="#000000" >
+<b>टिप्पणी:</b> संगठन द्वारा उपर्युक्त दर्शाए गए परीक्षा केंद्रों में परिवर्तन किया जा सकता है। यद्यपि अभ्यर्थी को उसके द्वारा  दिए गए  लिखित परीक्षा के लिए विकल्प के केंद्र आबंटित किए जाने का पूर्ण प्रयास किया जाएगा, परंतु यदि  किसी केद्र पर  पर्याप्त अभ्यर्थी उपलब्ध नहीं हो अथवा किसी पद के लिए क्षमता से अधिक उम्मीदवारों ने   उस केंद्र के लिए आवेदन किया हो अथवा अन्य प्रशासनिक कारणों से केन्द्रीय विद्यालय संगठन अपने विवेक पर अभ्यर्थी को अलग केद्र भी आवंटित कर सकता है । एक बार परीक्षा केन्द्र आबंटित  करने के पश्चात उसमें परिवर्तन के अनुरोध पर कोई विचार नहीं किया जाएगा तथा अभ्यर्थी  अपने खर्च पर आबंटित केन्द्र में उपस्थित होगे ।
+</font></span></p>
+
+<p align="justify"><span><font color="#000000">
+ (ग) 40% अथवा इससे अधिक दिव्यांगता के अभ्यर्थियों को यदि परीक्षा में अपनी सहायता के लिए लेखक की जरूरत पड़ती है तो इसकी व्यवस्था उन्हें स्वयं करनी होगी । लेखक की शिक्षा अथवा आयु इत्यादि के विषय में कोई प्रतिबंध नहीं है। 40%  अथवा उससे अधिक दिव्यांग  सभी अभ्यर्थियों को परीक्षा में प्रति घंटे के हिसाब से 20 मिनट का अतिरिक्त प्रतिपूरक समय दिया जाएगा।</font></span></p>
+
+
+<p align="justify"><span><font color="#000000" >
+दिव्यांग व्यक्तियों के लिए रिक्तियों का आरक्षण भारत सरकार के नियमों के अनुसार दिया जाएगा। 
+</font></span></p>
+
+<p align="justify"><span><font color="#000000" >
+(घ) किसी भी अभ्यर्थी को उपयुक्त प्रवेश-पत्र के बिना लिखित परीक्षा में प्रवेश नही दिया जाएगा।
+</font></span></p>
+
+
+
+<p align="justify"><span><font color="#000000" style=" font-weight: bold;">
+(ड़)
+ परीक्षा की योजना:
+</font></span></p>
+<p align="justify"><span><font color="#000000" style=" font-weight: bold;">
+(अ)	 स्नात्तकोत्तर अध्यापकों (पीजीटी) के पदों के लिए 
+</font></span></p>
+<p align="justify"><span><font color="#000000" >
+पीजीटी  के लिए लिखित परीक्षा का एक प्रश्नपत्र  निम्न प्रकार  होगा : - 
+</font></span></p>
+
+
+<table style="border: currentColor; border-image: none; width: 411.2pt; margin-left: 9.9pt; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt;" border="1" cellspacing="0" cellpadding="0"> 
+<tbody><tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+परीक्षा<span>
+</span></p>
+</td>
+<td valign="top" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>परीक्षा के घटक
+</p>
+</td> 
+
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+प्रश्नों की संख्या<span>
+</span></p>
+</td>
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+कुल अंक<span>
+</span></p>
+</td>
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+परीक्षा अवधि<span>
+</span></p>
+</td>
+<tr>
+<td valign="top" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>लिखित परीक्षा </p>
+</td>
+</tr>
+</tr>
+ <tr style="height: 19.55pt; mso-yfti-irow: 1;">
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+भाग - I</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+1.	सामान्य अंग्रेजी</br>
+2.	सामान्य हिंदी
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+20</br>
+20
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+20</br>
+20
+</span></p>
+</td>
+<td valign="top" rowspan="2" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+3 घंटे
+</span></p>
+</td>
+ </tr>
+ <tr style="height: 19.55pt; mso-yfti-irow: 1;">
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+भाग - II</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+1.	समसामयिक विषय (करंट अफैयर्स</br>                  
+2.	तर्कसंगता एवं संख्यात्मक योग्यता </br>
+3.	अध्यापन कार्यप्रणाली</br>
+4.	संबंधित विषय का पाठ्यक्रम</br>
+<b> (के.वि.सं. के वेबसाइट पर उपलब्ध है)</b>
+
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+20</br></br><br/>
+20</br> </br>
+20</br> <br/>
+100
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+20</br></br><br/>
+20</br></br>
+20</br> <br/>
+100
+</span></p>
+</td>
+
+ </tr>
+  <tr style="height: 19.55pt; mso-yfti-irow: 1;">
+<td valign="top" colspan="2" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+लिखित परीक्षा का योग</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+200
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+200	
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+
+</span></p>
+</td>
+ </tr>
+</tbody></table></br>
+
+<p align="justify"><span><font color="#000000" style=" font-weight: bold;">
+(स)  प्रशिक्षित स्नातक अध्यापक (अंग्रेजी, हिन्दी, संस्कृत, गणित, सामाजिक अघ्ययन और विज्ञान) तथा प्राथमिक अध्यापक के पदों के लिए
+</font></span></p>
+<p align="justify"><span><font color="#000000" >
+प्रशिक्षित स्नातक अध्यापक (टीजीटी) (अंग्रेजी, हिन्दी, संस्कृत, गणित, सामाजिक अध्ययन और विज्ञान) और प्राथमिक अध्यापक की लिखित परीक्षा निम्न प्रकार होगी:-</font></span></p>
+
+
+<table style="border: currentColor; border-image: none; width: 411.2pt; margin-left: 9.9pt; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt;" border="1" cellspacing="0" cellpadding="0"> 
+<tbody>
+<tr style="height: 19.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;"> 
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+परीक्षा
+</span></p>
+</td>
+<td valign="top" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>परीक्षा के घटक
+</p>
+</td> 
+
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+प्रश्नों की संख्या
+</span></p>
+</td>
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+कुल अंक
+</span></p>
+</td>
+<td valign="top" rowspan="2" style="padding: 0in 5.4pt; border: 1pt solid windowtext; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";="" mso-hansi-font-family:calibri;mso-bidi-font-family:arial;color:black;="" mso-ansi-language:en-in"="">
+परीक्षा अवधि
+</span></p>
+</td>
+<tr>
+<td valign="top" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0in 5.4pt; border-image: none; width: 105.05pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+<p>लिखित परीक्षा </p>
+</td>
+</tr>
+</tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 1;">
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+भाग - I</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+1.	सामान्य अंग्रेजी</br>
+2.	सामान्य हिंदी
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+15</br>
+15
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+15</br>
+15
+</span></p>
+</td>
+<td valign="top" rowspan="2" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+2 घंटे 30 मिनट
+</span></p>
+</td>
+</tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 1;">
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+भाग - II</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+1.	समसामयिक विषय (करंट अफैयर्स) </br>
+2.	तर्कसंगता  योग्यता </br>
+3.	अध्यापन कार्यप्रणाली
+
+
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+40</br> </br><br/>
+40</br><br/>
+40
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+40</br></br><br/>
+40</br><br/>
+40
+</span></p>
+</td>
+</tr>
+<tr style="height: 19.55pt; mso-yfti-irow: 1;">
+<td valign="top" colspan="2" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+लिखित परीक्षा का योग</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+150
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+150
+</span></p>
+</td>
+<td valign="top" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0in 5.4pt; border-image: none; width: 156.15pt; height: 19.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+<p>
+<span lang="EN-IN" style="font-size: 12pt; mso-ascii-font-family: Calibri;" times="" new="" roman";mso-hansi-font-family:calibri;="" mso-bidi-font-family:arial;color:black;mso-ansi-language:en-in"="">
+
+</span></p>
+</td>
+ </tr>
+</tbody>
+</table>
+</br>
+<p align="justify"><span><font color="#000000">
+(द) परीक्षा अनुसूची की सूचना प्रवेश-पत्र के साथ दी जाएगी । परीक्षा अनुसूची का विस्तृत विवरण यथा समय केविसं की वेबसाइट  <a target="_blank" href="http://kvsangathan.nic.in/">www.kvsangathan.nic.in</a>  पर भी अधिसूचित कर दी जाएगी।
+</font></span></p>
+<p align="justify"><span><font color="#000000">
+(प)  लिखित परीक्षा  में निष्पादन तथा रिक्तियों की संख्या को ध्यान में रखकर अभ्यर्थियों को साक्षात्कार हेतु बुलाया जाएगा। यह सूचना भी यथा समय  केन्द्रीय विद्यालय संगठन की वेबसाइट <a target="_blank" href="http://kvsangathan.nic.in/">www.kvsangathan.nic.in</a> पर दे दी जाएगी ।  अभ्यर्थियों को चाहिए कि वे समय-समय पर केन्द्रीय विद्यालय संगठन की वेबसाइट को देखते रहे ।  पीजीटी, टीजीटी तथा प्राथमिक अध्यापक के पदों के लिए लिखित परीक्षा और साक्षात्कार दोनों के निष्पादन को मिलाकर वरियता सूची तैयार की जाएगी । <b>तथापि, चयन विधि के संबंध में  केन्द्रीय विद्यालय संगठन का विवेक सर्वोपरि है और जिसमें परिवर्तन भी किया जा सकता है ।</b>
+</font></span></p></br></br>
+</div>
+</div>
+<div class="col-md-3  col-sm-4 col-xs-12">
+<div class="link_box">
+<div class="tab">
+<h2>वर्तमान घटनाएं </h2>
+</div>
+<ul id="ctl00_CurrentEvents_BLinks">
+<!--<li> <a target="_self" href="#">प्रवेश पत्र डाउनलोड करें <img src="img/newicon.gif"></a></li>
+<li> <a target="_self" href="#">पावती पृष्ठ डाउनलोड करें</a></li>-->
+<li> <a target="_self" href="#">परीक्षा के लिए अनुसूची</a></li>
+<!-- <a target="_self" href="#">परीक्षा की तिथि<img src="img/newicon.gif"></a></li>
+<li><a target="_self" href="#">अधिसूचना</a></li>-->
+
+</ul>     
+</div>
+<div style="height: 10px;">
+</div>
+<ul id="ctl00_LeftLinks_BLinks" class="nav nav-pills nav-stacked arrow_link altlks">
+<li> <a target="_blank" href="http://cbse.nic.in/">सीबीएसई पोर्टल</a></li>
+<li> <a target="_blank" href="http://kvsangathan.nic.in/">केवीएस पोर्टल</a></li>
+</ul></br>
+<!----<div style="background-color:bisque; width:100%;margin:0 auto;padding:10px 30px;">
+ <table class="tabBlock" align="center" cellspacing="0" cellpadding="0" border="0">
+<tr><td class="clock" id="dc" style="padding-left:25px;"></td>    
+<td class="clock" id="dc_second"></td>
+
+</tr>      
+</table>
+</div>	--->		
+</div>
+</div>
+<div id="footer">
+<div class="container">
+<p id="ctl00_divBottomLinks_BLinks"></p>
+<br>
+<span style="text-align:center; color: black;">अस्वीकरण: यह साइट आईटी सीबीएसई द्वारा डिज़ाइन और होस्ट की गई है</span>
+</div>
+</div>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<!----<script>
+    // OUR FUNCTION WHICH IS EXECUTED ON LOAD OF THE PAGE.
+    function digitized() {
+        var dt = new Date();    // DATE() CONSTRUCTOR FOR CURRENT SYSTEM DATE AND TIME.
+        var hrs = dt.getHours();
+        var min = dt.getMinutes();
+        var sec = dt.getSeconds();
+
+        min = Ticking(min);
+        sec = Ticking(sec);
+
+        document.getElementById('dc').innerHTML = hrs + ":" + min;
+        document.getElementById('dc_second').innerHTML = ":" + sec;
+
+
+
+        // CALL THE FUNCTION EVERY 1 SECOND (RECURSION).
+        var time
+        time = setInterval('digitized()', 1000);
+    }
+
+    function Ticking(ticVal) {
+        if (ticVal < 10) {
+            ticVal = "0" + ticVal;
+        }
+        return ticVal;
+    }
+</script>---->
+</body>
+</html>
